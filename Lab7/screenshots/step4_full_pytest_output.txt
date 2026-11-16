@@ -1,0 +1,749 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.16, pytest-9.2.0, pluggy-1.7.0
+rootdir: ~/SELABS/Lab7
+plugins: hypothesis-6.170.15, platformdirs-4.14.5
+collected 12 items
+
+test_processor.py FFFF.FF.FF.F                                           [100%]
+
+=================================== FAILURES ===================================
+______________________ test_validate_blood_type_no_crash _______________________
+  + Exception Group Traceback (most recent call last):
+  |   File "~/SELABS/Lab7/test_processor.py", line 37, in test_validate_blood_type_no_crash
+  |     def test_validate_blood_type_no_crash(s):
+  |                    ^^^
+  | ExceptionGroup: Hypothesis found 3 distinct failures. (3 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 39, in test_validate_blood_type_no_crash
+    |     result = validate_blood_type(s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 10, in validate_blood_type
+    |     return f"{antigen} {rh_map[rh_char]}"
+    |                         ~~~~~~^^^^^^^^^
+    | KeyError: '0'
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 41, in test_validate_blood_type_no_crash
+    |     assert False, f"validate_blood_type crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: validate_blood_type crashed on '0' with: KeyError: '0'
+    | assert False
+    | Failing test case: test_validate_blood_type_no_crash(
+    |     s='0',
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:40
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 39, in test_validate_blood_type_no_crash
+    |     result = validate_blood_type(s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 8, in validate_blood_type
+    |     rh_char = cleaned[-1]
+    |               ~~~~~~~^^^^
+    | IndexError: string index out of range
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 41, in test_validate_blood_type_no_crash
+    |     assert False, f"validate_blood_type crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: validate_blood_type crashed on '' with: IndexError: string index out of range
+    | assert False
+    | Failing test case: test_validate_blood_type_no_crash(
+    |     s='',
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:40
+    +---------------- 3 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 39, in test_validate_blood_type_no_crash
+    |     result = validate_blood_type(s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 6, in validate_blood_type
+    |     cleaned = blood_code.strip().upper()
+    |               ^^^^^^^^^^^^^^^^
+    | AttributeError: 'NoneType' object has no attribute 'strip'
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 41, in test_validate_blood_type_no_crash
+    |     assert False, f"validate_blood_type crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: validate_blood_type crashed on None with: AttributeError: 'NoneType' object has no attribute 'strip'
+    | assert False
+    | Failing test case: test_validate_blood_type_no_crash(
+    |     s=None,  # or any other generated value
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:40
+    +------------------------------------
+______________________ test_calculate_pulse_pressure_safe ______________________
+  + Exception Group Traceback (most recent call last):
+  |   File "~/SELABS/Lab7/test_processor.py", line 46, in test_calculate_pulse_pressure_safe
+  |     def test_calculate_pulse_pressure_safe(s):
+  |                    ^^^
+  | ExceptionGroup: Hypothesis found 5 distinct failures. (5 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 48, in test_calculate_pulse_pressure_safe
+    |     result = calculate_pulse_pressure(s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 21, in calculate_pulse_pressure
+    |     ratio = round(systolic / diastolic, 2)
+    |                   ~~~~~~~~~^~~~~~~~~~~
+    | ZeroDivisionError: division by zero
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 50, in test_calculate_pulse_pressure_safe
+    |     assert False, f"calculate_pulse_pressure crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: calculate_pulse_pressure crashed on '0/0' with: ZeroDivisionError: division by zero
+    | assert False
+    | Failing test case: test_calculate_pulse_pressure_safe(
+    |     s='0/0',
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 48, in test_calculate_pulse_pressure_safe
+    |     result = calculate_pulse_pressure(s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 19, in calculate_pulse_pressure
+    |     diastolic = int(dia_str)
+    |                 ^^^^^^^^^^^^
+    | ValueError: invalid literal for int() with base 10: ''
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 50, in test_calculate_pulse_pressure_safe
+    |     assert False, f"calculate_pulse_pressure crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: calculate_pulse_pressure crashed on '0/' with: ValueError: invalid literal for int() with base 10: ''
+    | assert False
+    | Failing test case: test_calculate_pulse_pressure_safe(
+    |     s='0/',
+    | )
+    +---------------- 3 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 48, in test_calculate_pulse_pressure_safe
+    |     result = calculate_pulse_pressure(s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 18, in calculate_pulse_pressure
+    |     systolic = int(sys_str)
+    |                ^^^^^^^^^^^^
+    | ValueError: invalid literal for int() with base 10: ''
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 50, in test_calculate_pulse_pressure_safe
+    |     assert False, f"calculate_pulse_pressure crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: calculate_pulse_pressure crashed on '/' with: ValueError: invalid literal for int() with base 10: ''
+    | assert False
+    | Failing test case: test_calculate_pulse_pressure_safe(
+    |     s='/',
+    | )
+    +---------------- 4 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 48, in test_calculate_pulse_pressure_safe
+    |     result = calculate_pulse_pressure(s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 17, in calculate_pulse_pressure
+    |     sys_str, dia_str = bp_string.split('/')
+    |     ^^^^^^^^^^^^^^^^
+    | ValueError: not enough values to unpack (expected 2, got 1)
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 50, in test_calculate_pulse_pressure_safe
+    |     assert False, f"calculate_pulse_pressure crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: calculate_pulse_pressure crashed on '' with: ValueError: not enough values to unpack (expected 2, got 1)
+    | assert False
+    | Failing test case: test_calculate_pulse_pressure_safe(
+    |     s='',  # or any other generated value
+    | )
+    +---------------- 5 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 48, in test_calculate_pulse_pressure_safe
+    |     result = calculate_pulse_pressure(s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 17, in calculate_pulse_pressure
+    |     sys_str, dia_str = bp_string.split('/')
+    |                        ^^^^^^^^^^^^^^^
+    | AttributeError: 'NoneType' object has no attribute 'split'
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 50, in test_calculate_pulse_pressure_safe
+    |     assert False, f"calculate_pulse_pressure crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: calculate_pulse_pressure crashed on None with: AttributeError: 'NoneType' object has no attribute 'split'
+    | assert False
+    | Failing test case: test_calculate_pulse_pressure_safe(
+    |     s=None,  # or any other generated value
+    | )
+    +------------------------------------
+________________________ test_parse_donor_registry_safe ________________________
+  + Exception Group Traceback (most recent call last):
+  |   File "~/SELABS/Lab7/test_processor.py", line 55, in test_parse_donor_registry_safe
+  |     def test_parse_donor_registry_safe(s):
+  |                    ^^^
+  | ExceptionGroup: Hypothesis found 3 distinct failures. (3 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 57, in test_parse_donor_registry_safe
+    |     result = parse_donor_registry(s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 31, in parse_donor_registry
+    |     weight = float(fields[1])
+    |              ^^^^^^^^^^^^^^^^
+    | ValueError: could not convert string to float: ''
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 59, in test_parse_donor_registry_safe
+    |     assert False, f"parse_donor_registry crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: parse_donor_registry crashed on '|' with: ValueError: could not convert string to float: ''
+    | assert False
+    | Failing test case: test_parse_donor_registry_safe(
+    |     s='|',
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 57, in test_parse_donor_registry_safe
+    |     result = parse_donor_registry(s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 31, in parse_donor_registry
+    |     weight = float(fields[1])
+    |                    ~~~~~~^^^
+    | IndexError: list index out of range
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 59, in test_parse_donor_registry_safe
+    |     assert False, f"parse_donor_registry crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: parse_donor_registry crashed on '' with: IndexError: list index out of range
+    | assert False
+    | Failing test case: test_parse_donor_registry_safe(
+    |     s='',  # or any other generated value
+    | )
+    +---------------- 3 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 57, in test_parse_donor_registry_safe
+    |     result = parse_donor_registry(s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 29, in parse_donor_registry
+    |     fields = donor_entry.split('|')
+    |              ^^^^^^^^^^^^^^^^^
+    | AttributeError: 'NoneType' object has no attribute 'split'
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 59, in test_parse_donor_registry_safe
+    |     assert False, f"parse_donor_registry crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: parse_donor_registry crashed on None with: AttributeError: 'NoneType' object has no attribute 'split'
+    | assert False
+    | Failing test case: test_parse_donor_registry_safe(
+    |     s=None,  # or any other generated value
+    | )
+    +------------------------------------
+_________________ test_validate_blood_type_near_valid_no_crash _________________
+  + Exception Group Traceback (most recent call last):
+  |   File "~/SELABS/Lab7/test_processor.py", line 79, in test_validate_blood_type_near_valid_no_crash
+  |     def test_validate_blood_type_near_valid_no_crash(s):
+  |                    ^^^
+  | ExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 25, in _no_crash
+    |     result = func(value)
+    |              ^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 10, in validate_blood_type
+    |     return f"{antigen} {rh_map[rh_char]}"
+    |                         ~~~~~~^^^^^^^^^
+    | KeyError: '*'
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 80, in test_validate_blood_type_near_valid_no_crash
+    |     _no_crash(validate_blood_type, s)
+    |   File "~/SELABS/Lab7/test_processor.py", line 27, in _no_crash
+    |     assert False, f"{func.__name__} crashed on {value!r} with {type(e).__name__}: {e}"
+    | AssertionError: validate_blood_type crashed on '*' with KeyError: '*'
+    | assert False
+    | Failing test case: test_validate_blood_type_near_valid_no_crash(
+    |     # The test always failed when commented parts were varied together.
+    |     s=(lambda a, r, pad1, pad2: f'{pad1}{a}{r}{pad2}')(
+    |         '',  # or any other generated value
+    |         '*',
+    |         '',  # or any other generated value
+    |         '',  # or any other generated value
+    |     ),
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:26
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 25, in _no_crash
+    |     result = func(value)
+    |              ^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 8, in validate_blood_type
+    |     rh_char = cleaned[-1]
+    |               ~~~~~~~^^^^
+    | IndexError: string index out of range
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 80, in test_validate_blood_type_near_valid_no_crash
+    |     _no_crash(validate_blood_type, s)
+    |   File "~/SELABS/Lab7/test_processor.py", line 27, in _no_crash
+    |     assert False, f"{func.__name__} crashed on {value!r} with {type(e).__name__}: {e}"
+    | AssertionError: validate_blood_type crashed on '' with IndexError: string index out of range
+    | assert False
+    | Failing test case: test_validate_blood_type_near_valid_no_crash(
+    |     # The test always failed when commented parts were varied together.
+    |     s=(lambda a, r, pad1, pad2: f'{pad1}{a}{r}{pad2}')(
+    |         <...>,  # or any other generated value
+    |         <...>,
+    |         <...>,  # or any other generated value
+    |         <...>,  # or any other generated value
+    |     ),
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:26
+    +------------------------------------
+______________ test_validate_blood_type_only_real_groups_accepted ______________
+  + Exception Group Traceback (most recent call last):
+  |   File "~/SELABS/Lab7/test_processor.py", line 92, in test_validate_blood_type_only_real_groups_accepted
+  |     def test_validate_blood_type_only_real_groups_accepted(s):
+  |                    ^^^
+  | ExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 25, in _no_crash
+    |     result = func(value)
+    |              ^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 10, in validate_blood_type
+    |     return f"{antigen} {rh_map[rh_char]}"
+    |                         ~~~~~~^^^^^^^^^
+    | KeyError: '0'
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 94, in test_validate_blood_type_only_real_groups_accepted
+    |     result = _no_crash(validate_blood_type, s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/test_processor.py", line 27, in _no_crash
+    |     assert False, f"{func.__name__} crashed on {value!r} with {type(e).__name__}: {e}"
+    | AssertionError: validate_blood_type crashed on '0' with KeyError: '0'
+    | assert False
+    | Failing test case: test_validate_blood_type_only_real_groups_accepted(
+    |     s='0',  # or any other generated value
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 25, in _no_crash
+    |     result = func(value)
+    |              ^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 8, in validate_blood_type
+    |     rh_char = cleaned[-1]
+    |               ~~~~~~~^^^^
+    | IndexError: string index out of range
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 94, in test_validate_blood_type_only_real_groups_accepted
+    |     result = _no_crash(validate_blood_type, s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/test_processor.py", line 27, in _no_crash
+    |     assert False, f"{func.__name__} crashed on {value!r} with {type(e).__name__}: {e}"
+    | AssertionError: validate_blood_type crashed on '' with IndexError: string index out of range
+    | assert False
+    | Failing test case: test_validate_blood_type_only_real_groups_accepted(
+    |     s='',
+    | )
+    +------------------------------------
+______________ test_calculate_pulse_pressure_near_valid_no_crash _______________
+  + Exception Group Traceback (most recent call last):
+  |   File "~/SELABS/Lab7/test_processor.py", line 111, in test_calculate_pulse_pressure_near_valid_no_crash
+  |     def test_calculate_pulse_pressure_near_valid_no_crash(s):
+  |                    ^^^
+  | ExceptionGroup: Hypothesis found 4 distinct failures. (4 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 25, in _no_crash
+    |     result = func(value)
+    |              ^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 19, in calculate_pulse_pressure
+    |     diastolic = int(dia_str)
+    |                 ^^^^^^^^^^^^
+    | ValueError: invalid literal for int() with base 10: ''
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 112, in test_calculate_pulse_pressure_near_valid_no_crash
+    |     _no_crash(calculate_pulse_pressure, s)
+    |   File "~/SELABS/Lab7/test_processor.py", line 27, in _no_crash
+    |     assert False, f"{func.__name__} crashed on {value!r} with {type(e).__name__}: {e}"
+    | AssertionError: calculate_pulse_pressure crashed on '0/' with ValueError: invalid literal for int() with base 10: ''
+    | assert False
+    | Failing test case: test_calculate_pulse_pressure_near_valid_no_crash(
+    |     s=(lambda a, sep, b: f'{a}{sep}{b}')(
+    |         '0',  # or any other generated value
+    |         '/',  # or any other generated value
+    |         '',
+    |     ),
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:26
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 25, in _no_crash
+    |     result = func(value)
+    |              ^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 18, in calculate_pulse_pressure
+    |     systolic = int(sys_str)
+    |                ^^^^^^^^^^^^
+    | ValueError: invalid literal for int() with base 10: ''
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 112, in test_calculate_pulse_pressure_near_valid_no_crash
+    |     _no_crash(calculate_pulse_pressure, s)
+    |   File "~/SELABS/Lab7/test_processor.py", line 27, in _no_crash
+    |     assert False, f"{func.__name__} crashed on {value!r} with {type(e).__name__}: {e}"
+    | AssertionError: calculate_pulse_pressure crashed on '/0' with ValueError: invalid literal for int() with base 10: ''
+    | assert False
+    | Failing test case: test_calculate_pulse_pressure_near_valid_no_crash(
+    |     # The test sometimes passed when commented parts were varied together.
+    |     s=(lambda a, sep, b: f'{a}{sep}{b}')(
+    |         '',  # or any other generated value
+    |         '/',  # or any other generated value
+    |         '0',  # or any other generated value
+    |     ),
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:26
+    +---------------- 3 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 25, in _no_crash
+    |     result = func(value)
+    |              ^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 17, in calculate_pulse_pressure
+    |     sys_str, dia_str = bp_string.split('/')
+    |     ^^^^^^^^^^^^^^^^
+    | ValueError: too many values to unpack (expected 2)
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 112, in test_calculate_pulse_pressure_near_valid_no_crash
+    |     _no_crash(calculate_pulse_pressure, s)
+    |   File "~/SELABS/Lab7/test_processor.py", line 27, in _no_crash
+    |     assert False, f"{func.__name__} crashed on {value!r} with {type(e).__name__}: {e}"
+    | AssertionError: calculate_pulse_pressure crashed on '0//0' with ValueError: too many values to unpack (expected 2)
+    | assert False
+    | Failing test case: test_calculate_pulse_pressure_near_valid_no_crash(
+    |     # The test sometimes passed when commented parts were varied together.
+    |     s=(lambda a, sep, b: f'{a}{sep}{b}')(
+    |         '0',  # or any other generated value
+    |         '//',  # or any other generated value
+    |         '0',  # or any other generated value
+    |     ),
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:26
+    +---------------- 4 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 25, in _no_crash
+    |     result = func(value)
+    |              ^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 21, in calculate_pulse_pressure
+    |     ratio = round(systolic / diastolic, 2)
+    |                   ~~~~~~~~~^~~~~~~~~~~
+    | ZeroDivisionError: division by zero
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 112, in test_calculate_pulse_pressure_near_valid_no_crash
+    |     _no_crash(calculate_pulse_pressure, s)
+    |   File "~/SELABS/Lab7/test_processor.py", line 27, in _no_crash
+    |     assert False, f"{func.__name__} crashed on {value!r} with {type(e).__name__}: {e}"
+    | AssertionError: calculate_pulse_pressure crashed on '0/0' with ZeroDivisionError: division by zero
+    | assert False
+    | Failing test case: test_calculate_pulse_pressure_near_valid_no_crash(
+    |     s=(lambda a, sep, b: f'{a}{sep}{b}')(
+    |         '0',  # or any other generated value
+    |         '/',  # or any other generated value
+    |         '0',
+    |     ),
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:26
+    +------------------------------------
+__________ test_calculate_pulse_pressure_rejects_impossible_readings ___________
+  + Exception Group Traceback (most recent call last):
+  |   File "~/SELABS/Lab7/test_processor.py", line 125, in test_calculate_pulse_pressure_rejects_impossible_readings
+  |     def test_calculate_pulse_pressure_rejects_impossible_readings(systolic, diastolic):
+  |                    ^^^
+  | ExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 129, in test_calculate_pulse_pressure_rejects_impossible_readings
+    |     assert result.startswith("Invalid"), f"{systolic}/{diastolic} gave {result!r}"
+    | AssertionError: 0/1 gave 'Diff: -1, Ratio: 0.0'
+    | assert False
+    |  +  where False = <built-in method startswith of str object at 0x7f7f67c303f0>('Invalid')
+    |  +    where <built-in method startswith of str object at 0x7f7f67c303f0> = 'Diff: -1, Ratio: 0.0'.startswith
+    | Failing test case: test_calculate_pulse_pressure_rejects_impossible_readings(
+    |     systolic=0,
+    |     diastolic=1,  # or any other generated value
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:129
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 25, in _no_crash
+    |     result = func(value)
+    |              ^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 21, in calculate_pulse_pressure
+    |     ratio = round(systolic / diastolic, 2)
+    |                   ~~~~~~~~~^~~~~~~~~~~
+    | ZeroDivisionError: division by zero
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 127, in test_calculate_pulse_pressure_rejects_impossible_readings
+    |     result = _no_crash(calculate_pulse_pressure, f"{systolic}/{diastolic}")
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/test_processor.py", line 27, in _no_crash
+    |     assert False, f"{func.__name__} crashed on {value!r} with {type(e).__name__}: {e}"
+    | AssertionError: calculate_pulse_pressure crashed on '0/0' with ZeroDivisionError: division by zero
+    | assert False
+    | Failing test case: test_calculate_pulse_pressure_rejects_impossible_readings(
+    |     systolic=0,  # or any other generated value
+    |     diastolic=0,
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:26
+    +------------------------------------
+________________ test_parse_donor_registry_near_valid_no_crash _________________
+
+func = <function parse_donor_registry at 0x7f7f6a8f8680>, value = ''
+
+    def _no_crash(func, value):
+        """Call func(value); fail the test with a clear message if it raises."""
+        try:
+>           result = func(value)
+                     ^^^^^^^^^^^
+
+test_processor.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+donor_entry = ''
+
+    def parse_donor_registry(donor_entry):
+        """
+        Parses pipe-delimited record: 'DonorID|WeightKg|Hemoglobin'.
+        Assumes valid 3-token pipe-separated string.
+        """
+        fields = donor_entry.split('|')
+        donor_id = fields[0].strip()
+>       weight = float(fields[1])
+                       ^^^^^^^^^
+E       IndexError: list index out of range
+
+processor.py:31: IndexError
+
+During handling of the above exception, another exception occurred:
+
+    @given(record_like)
+>   def test_parse_donor_registry_near_valid_no_crash(s):
+                   ^^^
+
+test_processor.py:143: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_processor.py:144: in test_parse_donor_registry_near_valid_no_crash
+    _no_crash(parse_donor_registry, s)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+func = <function parse_donor_registry at 0x7f7f6a8f8680>, value = ''
+
+    def _no_crash(func, value):
+        """Call func(value); fail the test with a clear message if it raises."""
+        try:
+            result = func(value)
+        except Exception as e:  # pylint: disable=broad-except
+>           assert False, f"{func.__name__} crashed on {value!r} with {type(e).__name__}: {e}"
+E           AssertionError: parse_donor_registry crashed on '' with IndexError: list index out of range
+E           assert False
+E           Failing test case: test_parse_donor_registry_near_valid_no_crash(
+E               s='',
+E           )
+E           Explanation:
+E               These lines were always and only run by failing test cases:
+E                   ~/SELABS/Lab7/test_processor.py:26
+
+test_processor.py:27: AssertionError
+___________ test_parse_donor_registry_never_judges_non_finite_values ___________
+  + Exception Group Traceback (most recent call last):
+  |   File "~/SELABS/Lab7/test_processor.py", line 157, in test_parse_donor_registry_never_judges_non_finite_values
+  |     @given(record_like)
+  |                    ^^^
+  | ExceptionGroup: Hypothesis found 5 distinct failures. (5 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 169, in test_parse_donor_registry_never_judges_non_finite_values
+    |     assert result.startswith("Invalid"), f"{s!r} gave {result!r}"
+    | AssertionError: '|0|NAN' gave 'Donor : Deferred'
+    | assert False
+    |  +  where False = <built-in method startswith of str object at 0x7f7f67bc69f0>('Invalid')
+    |  +    where <built-in method startswith of str object at 0x7f7f67bc69f0> = 'Donor : Deferred'.startswith
+    | Failing test case: test_parse_donor_registry_never_judges_non_finite_values(
+    |     s='|0|NAN',
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:169
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 25, in _no_crash
+    |     result = func(value)
+    |              ^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 32, in parse_donor_registry
+    |     hemoglobin = float(fields[2])
+    |                  ^^^^^^^^^^^^^^^^
+    | ValueError: could not convert string to float: ''
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 160, in test_parse_donor_registry_never_judges_non_finite_values
+    |     result = _no_crash(parse_donor_registry, s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/test_processor.py", line 27, in _no_crash
+    |     assert False, f"{func.__name__} crashed on {value!r} with {type(e).__name__}: {e}"
+    | AssertionError: parse_donor_registry crashed on '|0|' with ValueError: could not convert string to float: ''
+    | assert False
+    | Failing test case: test_parse_donor_registry_never_judges_non_finite_values(
+    |     s='|0|',
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:26
+    +---------------- 3 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 25, in _no_crash
+    |     result = func(value)
+    |              ^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 32, in parse_donor_registry
+    |     hemoglobin = float(fields[2])
+    |                        ~~~~~~^^^
+    | IndexError: list index out of range
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 160, in test_parse_donor_registry_never_judges_non_finite_values
+    |     result = _no_crash(parse_donor_registry, s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/test_processor.py", line 27, in _no_crash
+    |     assert False, f"{func.__name__} crashed on {value!r} with {type(e).__name__}: {e}"
+    | AssertionError: parse_donor_registry crashed on '|0' with IndexError: list index out of range
+    | assert False
+    | Failing test case: test_parse_donor_registry_never_judges_non_finite_values(
+    |     s='|0',
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:26
+    +---------------- 4 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 25, in _no_crash
+    |     result = func(value)
+    |              ^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 31, in parse_donor_registry
+    |     weight = float(fields[1])
+    |              ^^^^^^^^^^^^^^^^
+    | ValueError: could not convert string to float: ''
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 160, in test_parse_donor_registry_never_judges_non_finite_values
+    |     result = _no_crash(parse_donor_registry, s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/test_processor.py", line 27, in _no_crash
+    |     assert False, f"{func.__name__} crashed on {value!r} with {type(e).__name__}: {e}"
+    | AssertionError: parse_donor_registry crashed on '|' with ValueError: could not convert string to float: ''
+    | assert False
+    | Failing test case: test_parse_donor_registry_never_judges_non_finite_values(
+    |     s='|',
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:26
+    +---------------- 5 ----------------
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 25, in _no_crash
+    |     result = func(value)
+    |              ^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/processor.py", line 31, in parse_donor_registry
+    |     weight = float(fields[1])
+    |                    ~~~~~~^^^
+    | IndexError: list index out of range
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "~/SELABS/Lab7/test_processor.py", line 160, in test_parse_donor_registry_never_judges_non_finite_values
+    |     result = _no_crash(parse_donor_registry, s)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "~/SELABS/Lab7/test_processor.py", line 27, in _no_crash
+    |     assert False, f"{func.__name__} crashed on {value!r} with {type(e).__name__}: {e}"
+    | AssertionError: parse_donor_registry crashed on '' with IndexError: list index out of range
+    | assert False
+    | Failing test case: test_parse_donor_registry_never_judges_non_finite_values(
+    |     s='',
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         ~/SELABS/Lab7/test_processor.py:26
+    +------------------------------------
+=========================== short test summary info ============================
+FAILED test_processor.py::test_validate_blood_type_no_crash - ExceptionGroup:...
+FAILED test_processor.py::test_calculate_pulse_pressure_safe - ExceptionGroup...
+FAILED test_processor.py::test_parse_donor_registry_safe - ExceptionGroup: Hy...
+FAILED test_processor.py::test_validate_blood_type_near_valid_no_crash - Exce...
+FAILED test_processor.py::test_validate_blood_type_only_real_groups_accepted
+FAILED test_processor.py::test_calculate_pulse_pressure_near_valid_no_crash
+FAILED test_processor.py::test_calculate_pulse_pressure_rejects_impossible_readings
+FAILED test_processor.py::test_parse_donor_registry_near_valid_no_crash - Ass...
+FAILED test_processor.py::test_parse_donor_registry_never_judges_non_finite_values
+========================= 9 failed, 3 passed in 2.85s ==========================
