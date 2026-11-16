@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1010" viewBox="0 0 1240 1010">
+<defs><marker id="open" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L12,7 L1,13" fill="none" stroke="#1f4e8c" stroke-width="1.8"/></marker></defs>
+<rect width="1240" height="1010" fill="#ffffff"/>
+<text x="620.0" y="28.0" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Student Project Portfolio &amp; Showcase App — UML Use-Case Diagram</text>
+<text x="620.0" y="54.0" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#555">Lab 1 · Aditya Pradeep · PES2UG24AM900</text>
+<rect x="250" y="80" width="740" height="905" fill="#fbfcfe" stroke="#222" stroke-width="2"/>
+<text x="620" y="102.0" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Project Showcase System</text>
+<ellipse cx="455" cy="160" rx="128" ry="34" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<text x="455" y="151.9" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">UC-01 Register Team</text>
+<text x="455" y="168.1" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">&amp; Log In</text>
+<ellipse cx="455" cy="250" rx="128" ry="34" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<text x="455" y="241.9" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">UC-02 Create</text>
+<text x="455" y="258.1" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Showcase Profile</text>
+<ellipse cx="455" cy="340" rx="128" ry="34" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<text x="455" y="331.9" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">UC-04 Upload</text>
+<text x="455" y="348.1" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Multimedia Artifacts</text>
+<ellipse cx="455" cy="430" rx="128" ry="34" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<text x="455" y="421.9" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">UC-03 View Rubric</text>
+<text x="455" y="438.1" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Feedback</text>
+<ellipse cx="455" cy="530" rx="128" ry="34" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<text x="455" y="521.9" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">UC-08 View Leaderboard</text>
+<text x="455" y="538.1" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">&amp; Results</text>
+<ellipse cx="455" cy="640" rx="128" ry="34" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<text x="455" y="631.9" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">UC-05 Grade Project</text>
+<text x="455" y="648.1" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Using Digital Rubric</text>
+<ellipse cx="455" cy="790" rx="128" ry="34" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<text x="455" y="781.9" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">UC-06 Browse</text>
+<text x="455" y="798.1" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Showcase Catalogue</text>
+<ellipse cx="455" cy="900" rx="128" ry="34" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<text x="455" y="891.9" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">UC-07 Cast</text>
+<text x="455" y="908.1" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Public Vote</text>
+<ellipse cx="805" cy="200" rx="118" ry="34" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<text x="805" y="191.9" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Verify GitHub</text>
+<text x="805" y="208.1" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Repository</text>
+<ellipse cx="805" cy="340" rx="118" ry="34" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<text x="805" y="331.9" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Embed Demo</text>
+<text x="805" y="348.1" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Video Link</text>
+<ellipse cx="805" cy="580" rx="118" ry="34" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<text x="805" y="571.9" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Authenticate</text>
+<text x="805" y="588.1" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">with MFA</text>
+<ellipse cx="805" cy="680" rx="118" ry="34" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<text x="805" y="671.9" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Add Improvement</text>
+<text x="805" y="688.1" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Comments</text>
+<ellipse cx="805" cy="790" rx="118" ry="34" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<text x="805" y="781.9" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Filter by Category</text>
+<text x="805" y="798.1" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">/ Search</text>
+<ellipse cx="805" cy="900" rx="118" ry="34" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<text x="805" y="891.9" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Verify Identity</text>
+<text x="805" y="908.1" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">via OTP</text>
+<g stroke="#111" stroke-width="2" fill="none"><circle cx="110" cy="230" r="13" fill="#fff"/><line x1="110" y1="243" x2="110" y2="278"/><line x1="86" y1="256" x2="134" y2="256"/><line x1="110" y1="278" x2="90" y2="306"/><line x1="110" y1="278" x2="130" y2="306"/></g>
+<text x="110" y="328.0" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Student Team</text>
+<g stroke="#111" stroke-width="2" fill="none"><circle cx="110" cy="560" r="13" fill="#fff"/><line x1="110" y1="573" x2="110" y2="608"/><line x1="86" y1="586" x2="134" y2="586"/><line x1="110" y1="608" x2="90" y2="636"/><line x1="110" y1="608" x2="130" y2="636"/></g>
+<text x="110" y="658.0" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Panel Judge</text>
+<g stroke="#111" stroke-width="2" fill="none"><circle cx="110" cy="800" r="13" fill="#fff"/><line x1="110" y1="813" x2="110" y2="848"/><line x1="86" y1="826" x2="134" y2="826"/><line x1="110" y1="848" x2="90" y2="876"/><line x1="110" y1="848" x2="130" y2="876"/></g>
+<text x="110" y="898.0" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Public Visitor</text>
+<line x1="134" y1="262" x2="327.0" y2="160.0" stroke="#333" stroke-width="1.6"/>
+<line x1="134" y1="262" x2="327.0" y2="250.0" stroke="#333" stroke-width="1.6"/>
+<line x1="134" y1="262" x2="327.0" y2="340.0" stroke="#333" stroke-width="1.6"/>
+<line x1="134" y1="262" x2="327.0" y2="430.0" stroke="#333" stroke-width="1.6"/>
+<line x1="134" y1="262" x2="327.0" y2="530.0" stroke="#333" stroke-width="1.6"/>
+<line x1="134" y1="592" x2="327.0" y2="640.0" stroke="#333" stroke-width="1.6"/>
+<line x1="134" y1="592" x2="327.0" y2="530.0" stroke="#333" stroke-width="1.6"/>
+<line x1="134" y1="832" x2="327.0" y2="790.0" stroke="#333" stroke-width="1.6"/>
+<line x1="134" y1="832" x2="327.0" y2="900.0" stroke="#333" stroke-width="1.6"/>
+<line x1="134" y1="832" x2="327.0" y2="530.0" stroke="#333" stroke-width="1.6"/>
+<g stroke="#111" stroke-width="2" fill="none"><circle cx="1110" cy="165" r="13" fill="#fff"/><line x1="1110" y1="178" x2="1110" y2="213"/><line x1="1086" y1="191" x2="1134" y2="191"/><line x1="1110" y1="213" x2="1090" y2="241"/><line x1="1110" y1="213" x2="1130" y2="241"/></g>
+<text x="1110" y="263.0" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">GitHub API</text>
+<text x="1110" y="280.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#555">«system»</text>
+<g stroke="#111" stroke-width="2" fill="none"><circle cx="1110" cy="700" r="13" fill="#fff"/><line x1="1110" y1="713" x2="1110" y2="748"/><line x1="1086" y1="726" x2="1134" y2="726"/><line x1="1110" y1="748" x2="1090" y2="776"/><line x1="1110" y1="748" x2="1130" y2="776"/></g>
+<text x="1110" y="798.0" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">OTP / Identity</text>
+<text x="1110" y="815.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#555">Service «system»</text>
+<line x1="1086" y1="197" x2="923.0" y2="200.0" stroke="#333" stroke-width="1.6"/>
+<line x1="1086" y1="732" x2="923.0" y2="900.0" stroke="#333" stroke-width="1.6"/>
+<line x1="1086" y1="732" x2="923.0" y2="580.0" stroke="#333" stroke-width="1.6"/>
+<line x1="567.7" y1="233.9" x2="699.3" y2="215.1" stroke="#1f4e8c" stroke-width="1.6" stroke-dasharray="7,5" marker-end="url(#open)"/>
+<rect x="585.5056074781432" y="213.49919893169385" width="96" height="20" fill="#fff" opacity="0.92"/>
+<text x="633.5056074781432" y="224.5" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#1f4e8c">«include»</text>
+<line x1="562.5" y1="621.6" x2="703.6" y2="597.4" stroke="#1f4e8c" stroke-width="1.6" stroke-dasharray="7,5" marker-end="url(#open)"/>
+<rect x="585.0691510356082" y="598.4738598224671" width="96" height="20" fill="#fff" opacity="0.92"/>
+<text x="633.0691510356082" y="609.5" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#1f4e8c">«include»</text>
+<line x1="583.0" y1="900.0" x2="687.0" y2="900.0" stroke="#1f4e8c" stroke-width="1.6" stroke-dasharray="7,5" marker-end="url(#open)"/>
+<rect x="587.0" y="889.0" width="96" height="20" fill="#fff" opacity="0.92"/>
+<text x="635.0" y="900.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#1f4e8c">«include»</text>
+<line x1="687.0" y1="340.0" x2="583.0" y2="340.0" stroke="#1f4e8c" stroke-width="1.6" stroke-dasharray="7,5" marker-end="url(#open)"/>
+<rect x="587.0" y="329.0" width="96" height="20" fill="#fff" opacity="0.92"/>
+<text x="635.0" y="340.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#1f4e8c">«extend»</text>
+<line x1="695.3" y1="667.5" x2="572.6" y2="653.4" stroke="#1f4e8c" stroke-width="1.6" stroke-dasharray="7,5" marker-end="url(#open)"/>
+<rect x="585.9459857435223" y="649.4509697992596" width="96" height="20" fill="#fff" opacity="0.92"/>
+<text x="633.9459857435223" y="660.5" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#1f4e8c">«extend»</text>
+<line x1="687.0" y1="790.0" x2="583.0" y2="790.0" stroke="#1f4e8c" stroke-width="1.6" stroke-dasharray="7,5" marker-end="url(#open)"/>
+<rect x="587.0" y="779.0" width="96" height="20" fill="#fff" opacity="0.92"/>
+<text x="635.0" y="790.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#1f4e8c">«extend»</text>
+</svg>
