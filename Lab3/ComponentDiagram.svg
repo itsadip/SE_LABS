@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs><marker id="open" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L12,7 L1,13" fill="none" stroke="#555" stroke-width="1.8"/></marker></defs>
+<rect width="1200" height="900" fill="#fff"/>
+<text x="600.0" y="28.0" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Self-Service Coffee Kiosk — UML Component Diagram (Layered Architecture)</text>
+<text x="600.0" y="54.0" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#555">Lab 3 · Aditya Pradeep · PES2UG24AM900</text>
+<rect x="30" y="80" width="1140" height="165" rx="6" fill="#f4f8ff" stroke="#7a8aa3" stroke-width="1.5"/>
+<text x="42" y="97.0" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" font-style="normal" text-anchor="start" dominant-baseline="middle" fill="#34495e">Presentation Layer</text>
+<rect x="30" y="265" width="1140" height="240" rx="6" fill="#f5fbf3" stroke="#7a8aa3" stroke-width="1.5"/>
+<text x="42" y="282.0" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" font-style="normal" text-anchor="start" dominant-baseline="middle" fill="#34495e">Business Logic Layer</text>
+<rect x="30" y="525" width="760" height="300" rx="6" fill="#fbf6fd" stroke="#7a8aa3" stroke-width="1.5"/>
+<text x="42" y="542.0" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" font-style="normal" text-anchor="start" dominant-baseline="middle" fill="#34495e">Data &amp; Device Access Layer</text>
+<rect x="810" y="525" width="360" height="300" rx="6" fill="#fffdf6" stroke="#7a8aa3" stroke-width="1.5" stroke-dasharray="8,5"/>
+<text x="822" y="542.0" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" font-style="normal" text-anchor="start" dominant-baseline="middle" fill="#34495e">External System (Bank / Acquirer)</text>
+<rect x="295.0" y="119.0" width="250" height="92" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<rect x="515.0" y="128.0" width="20" height="24" fill="#fff" stroke="#333" stroke-width="1.3"/><rect x="510.0" y="133.0" width="10" height="5" fill="#fff" stroke="#333" stroke-width="1.3"/><rect x="510.0" y="142.0" width="10" height="5" fill="#fff" stroke="#333" stroke-width="1.3"/>
+<text x="420" y="149.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#444">«component»</text>
+<text x="420" y="177.0" font-family="Liberation Sans, Arial, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Kiosk Touch UI</text>
+<rect x="295.0" y="354.0" width="250" height="92" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<rect x="515.0" y="363.0" width="20" height="24" fill="#fff" stroke="#333" stroke-width="1.3"/><rect x="510.0" y="368.0" width="10" height="5" fill="#fff" stroke="#333" stroke-width="1.3"/><rect x="510.0" y="377.0" width="10" height="5" fill="#fff" stroke="#333" stroke-width="1.3"/>
+<text x="420" y="384.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#444">«component»</text>
+<text x="420" y="412.0" font-family="Liberation Sans, Arial, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Order Manager</text>
+<rect x="775.0" y="354.0" width="250" height="92" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<rect x="995.0" y="363.0" width="20" height="24" fill="#fff" stroke="#333" stroke-width="1.3"/><rect x="990.0" y="368.0" width="10" height="5" fill="#fff" stroke="#333" stroke-width="1.3"/><rect x="990.0" y="377.0" width="10" height="5" fill="#fff" stroke="#333" stroke-width="1.3"/>
+<text x="900" y="384.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#444">«component»</text>
+<text x="900" y="412.0" font-family="Liberation Sans, Arial, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Payment Service</text>
+<rect x="105.0" y="654.0" width="270" height="92" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<rect x="345.0" y="663.0" width="20" height="24" fill="#fff" stroke="#333" stroke-width="1.3"/><rect x="340.0" y="668.0" width="10" height="5" fill="#fff" stroke="#333" stroke-width="1.3"/><rect x="340.0" y="677.0" width="10" height="5" fill="#fff" stroke="#333" stroke-width="1.3"/>
+<text x="240" y="684.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#444">«component»</text>
+<text x="240" y="712.0" font-family="Liberation Sans, Arial, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Menu &amp; Pricing Repository</text>
+<rect x="465.0" y="654.0" width="270" height="92" fill="#eef4fc" stroke="#1f4e8c" stroke-width="2"/>
+<rect x="705.0" y="663.0" width="20" height="24" fill="#fff" stroke="#333" stroke-width="1.3"/><rect x="700.0" y="668.0" width="10" height="5" fill="#fff" stroke="#333" stroke-width="1.3"/><rect x="700.0" y="677.0" width="10" height="5" fill="#fff" stroke="#333" stroke-width="1.3"/>
+<text x="600" y="684.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#444">«component»</text>
+<text x="600" y="712.0" font-family="Liberation Sans, Arial, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Receipt Printer Service</text>
+<rect x="850.0" y="654.0" width="280" height="92" fill="#fff8e8" stroke="#1f4e8c" stroke-width="2" stroke-dasharray="7,4"/>
+<rect x="1100.0" y="663.0" width="20" height="24" fill="#fff" stroke="#333" stroke-width="1.3"/><rect x="1095.0" y="668.0" width="10" height="5" fill="#fff" stroke="#333" stroke-width="1.3"/><rect x="1095.0" y="677.0" width="10" height="5" fill="#fff" stroke="#333" stroke-width="1.3"/>
+<text x="990" y="684.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#444">«component» «external»</text>
+<text x="990" y="712.0" font-family="Liberation Sans, Arial, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#111">Card Payment Gateway</text>
+<line x1="420" y1="354" x2="420.0" y2="308.7" stroke="#222" stroke-width="1.8"/>
+<circle cx="420.0" cy="299.7" r="9" fill="#fff" stroke="#222" stroke-width="1.8"/>
+<path d="M405.0,299.7 A15,15 0 0,1 435.0,299.7" fill="none" stroke="#222" stroke-width="1.8"/>
+<line x1="420.0" y1="284.7" x2="420" y2="211" stroke="#222" stroke-width="1.8"/>
+<text x="446.0" y="290.7" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" text-anchor="start" dominant-baseline="middle" fill="#1f4e8c">IOrderService</text>
+<text x="446.0" y="308.7" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="start" dominant-baseline="middle" fill="#444">in-process API: getMenu(), placeOrder()</text>
+<line x1="775" y1="400" x2="669.0" y2="400.0" stroke="#222" stroke-width="1.8"/>
+<circle cx="660.0" cy="400.0" r="9" fill="#fff" stroke="#222" stroke-width="1.8"/>
+<path d="M660.0,415.0 A15,15 0 0,1 660.0,385.0" fill="none" stroke="#222" stroke-width="1.8"/>
+<line x1="645.0" y1="400.0" x2="545" y2="400" stroke="#222" stroke-width="1.8"/>
+<text x="660.0" y="351.0" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" text-anchor="middle" dominant-baseline="middle" fill="#1f4e8c">IPaymentProcessing</text>
+<text x="660.0" y="369.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#444">API call: authorize(amount, card)</text>
+<line x1="240" y1="654" x2="271.5" y2="599.4" stroke="#222" stroke-width="1.8"/>
+<circle cx="276.0" cy="591.6" r="9" fill="#fff" stroke="#222" stroke-width="1.8"/>
+<path d="M263.0,584.1 A15,15 0 0,1 289.0,599.1" fill="none" stroke="#222" stroke-width="1.8"/>
+<line x1="283.5" y1="578.6" x2="360" y2="446" stroke="#222" stroke-width="1.8"/>
+<text x="254.0" y="582.6" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" text-anchor="end" dominant-baseline="middle" fill="#1f4e8c">IMenuCatalog</text>
+<text x="254.0" y="600.6" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="end" dominant-baseline="middle" fill="#444">SQL query (SQLite)</text>
+<line x1="600" y1="654" x2="568.5" y2="599.4" stroke="#222" stroke-width="1.8"/>
+<circle cx="564.0" cy="591.6" r="9" fill="#fff" stroke="#222" stroke-width="1.8"/>
+<path d="M551.0,599.1 A15,15 0 0,1 577.0,584.1" fill="none" stroke="#222" stroke-width="1.8"/>
+<line x1="556.5" y1="578.6" x2="480" y2="446" stroke="#222" stroke-width="1.8"/>
+<text x="586.0" y="582.6" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" text-anchor="start" dominant-baseline="middle" fill="#1f4e8c">IReceiptPrinting</text>
+<text x="586.0" y="600.6" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="start" dominant-baseline="middle" fill="#444">hardware I/F: ESC/POS over USB</text>
+<line x1="990" y1="654" x2="966.6" y2="599.9" stroke="#222" stroke-width="1.8"/>
+<circle cx="963.0" cy="591.6" r="9" fill="#fff" stroke="#222" stroke-width="1.8"/>
+<path d="M949.2,597.6 A15,15 0 0,1 976.8,585.6" fill="none" stroke="#222" stroke-width="1.8"/>
+<line x1="957.0" y1="577.8" x2="900" y2="446" stroke="#222" stroke-width="1.8"/>
+<text x="987.0" y="582.6" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" text-anchor="start" dominant-baseline="middle" fill="#1f4e8c">ICardGateway</text>
+<text x="987.0" y="600.6" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="start" dominant-baseline="middle" fill="#444">HTTPS / TLS 1.2 (PCI-DSS)</text>
+<line x1="465" y1="730" x2="377" y2="730" stroke="#555" stroke-width="1.6" stroke-dasharray="7,5" marker-end="url(#open)"/>
+<text x="421" y="752.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#555">«use»</text>
+<text x="421" y="768.0" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="italic" text-anchor="middle" dominant-baseline="middle" fill="#555">store info &amp; tax rates</text>
+<circle cx="50" cy="853" r="8" fill="#fff" stroke="#222" stroke-width="1.6"/>
+<text x="66" y="853.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="normal" text-anchor="start" dominant-baseline="middle" fill="#111">Provided interface (ball)</text>
+<path d="M275,839 A14,14 0 0,0 275,867" fill="none" stroke="#222" stroke-width="1.6"/>
+<text x="290" y="853.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="normal" text-anchor="start" dominant-baseline="middle" fill="#111">Required interface (socket)</text>
+<line x1="510" y1="853" x2="560" y2="853" stroke="#555" stroke-width="1.6" stroke-dasharray="7,5" marker-end="url(#open)"/>
+<text x="570" y="853.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="normal" text-anchor="start" dominant-baseline="middle" fill="#111">«use» dependency</text>
+<text x="740" y="853.0" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="normal" font-style="normal" text-anchor="start" dominant-baseline="middle" fill="#444">Ball-and-socket joined = assembly connector (labelled with protocol)</text>
+</svg>
