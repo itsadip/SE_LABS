@@ -1,5 +1,7 @@
+import glob
 import json
 import os
+import re
 
 # Global state
 class_capacity = {"Yoga": 3, "HIIT": 2, "Spin": 4}
@@ -33,7 +35,11 @@ def export_roster(file="gym_schedule.json"):
     json.dump(rosters, f)
 
 def clear_old_exports(prefix="old_"):
-    os.system("rm -f " + prefix + "*.json")
+    # No shell: validate the prefix, then delete matching files directly.
+    if not re.fullmatch(r"[A-Za-z0-9_-]+", prefix):
+        raise ValueError("Invalid export prefix: " + repr(prefix))
+    for path in glob.glob(prefix + "*.json"):
+        os.remove(path)
 
 def show_rosters():
     for c in rosters:
