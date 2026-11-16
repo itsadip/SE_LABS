@@ -1,0 +1,19 @@
+$ python gym_system.py   (pressed Enter)
+Class full: Yoga
+Invalid member ID: 55
+Unknown class: Pilates
+Invalid capacity for Spin: -2
+Nothing to cancel: no bookings for class Boxing
+How many walk-in guests for HIIT? (Enter for 1): Yoga (3/3) : M1, M2, M3
+Spin (3/4) : GUEST-1, GUEST-2, GUEST-3
+HIIT (1/2) : GUEST-4
+
+$ python gym_system.py   (typed: abc)
+Class full: Yoga
+Invalid member ID: 55
+Unknown class: Pilates
+Invalid capacity for Spin: -2
+Nothing to cancel: no bookings for class Boxing
+How many walk-in guests for HIIT? (Enter for 1): Please enter a whole number of guests; no walk-ins added.
+Yoga (3/3) : M1, M2, M3
+Spin (3/4) : GUEST-1, GUEST-2, GUEST-3
