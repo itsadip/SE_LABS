@@ -49,6 +49,17 @@ def draw_legend(surface, font):
         x -= 18
 
 
+def draw_lives(surface, font, lives, pos):
+    """'Lives:' followed by one small red heart-dot per remaining life."""
+    label = font.render("Lives:", True, COLOR_TEXT)
+    surface.blit(label, pos)
+    x = pos[0] + label.get_width() + 12
+    y = pos[1] + label.get_height() // 2
+    for _ in range(lives):
+        pygame.draw.circle(surface, (210, 40, 60), (x, y), 8)
+        x += 22
+
+
 def draw_text(surface, font, text, pos, color=COLOR_TEXT):
     surface.blit(font.render(text, True, color), pos)
 
