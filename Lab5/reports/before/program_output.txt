@@ -1,0 +1,22 @@
+$ python gym_system.py   (pressed Enter)
+Class full: Spin
+Class full: Spin
+Class full: Spin
+Nothing to cancel
+How many walk-in guests for HIIT? (Enter for 1): Yoga : M1, M2, M3, M4
+HIIT : 55, GUEST-0
+Pilates : M5
+Spin : 
+
+$ python gym_system.py   (typed: abc)
+Class full: Spin
+Class full: Spin
+Class full: Spin
+Nothing to cancel
+How many walk-in guests for HIIT? (Enter for 1): Traceback (most recent call last):
+  File "/tmp/claude-1000/-home-adi-adi-PES-SE/65b5b7af-29e2-4acc-bdcc-018b6ec7345e/scratchpad/l5run/gym_system.py", line 58, in <module>
+    main()
+  File "/tmp/claude-1000/-home-adi-adi-PES-SE/65b5b7af-29e2-4acc-bdcc-018b6ec7345e/scratchpad/l5run/gym_system.py", line 53, in main
+    addMembers("HIIT", int(n))
+                       ^^^^^^
+ValueError: invalid literal for int() with base 10: 'abc'
